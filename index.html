@@ -24,6 +24,14 @@
                 <h4 class="header-subtitle">Hello, I am</h4>
                 <h1 class="header-title">Anshuman Agrawal</h1>
                 <h6 class="header-mono">Back-End| Developer</h6>
+                
+                <!-- MODIFICATION 1: Relocated resume download button to header for better accessibility -->
+                <div class="mt-4">
+                    <a href="assets/docs/Anshuman_Agrawal_Resume.pdf" download class="btn btn-danger btn-lg">
+                        <i class="ti-download mr-2"></i>Download Resume
+                    </a>
+                </div>
+                <!-- End of Resume Button Relocation -->
             </div>
         </div>
     </header>
@@ -55,6 +63,11 @@
                     <li class="nav-item">
                         <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
+                    <!-- MODIFICATION 2A: Added direct Fablab navigation link to the main menu -->
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link text-danger font-weight-bold">Fablab</a>
+                    </li>
+                    <!-- End of Fablab Menu Addition -->
                     <li class="nav-item">
                         <a href="#blog" class="nav-link">Projects</a>
                     </li>
@@ -71,7 +84,7 @@
                 <h3 class="font-weight-light">Who am I ?</h3>
                 <span class="line mb-5"></span>
                 <h5 class="mb-3">A Back-End Developer Located In Our Lovely Earth</h5>
-                <p class="mt-20">Hi, I’m Anshuman Agrawal, a passionate Information Technology student pursuing my BE at Shri Sant Gajanan Maharaj College of Engineering, Shegaon. I’m enthusiastic about exploring the world of AI/ML, web development, and software engineering. With hands-on experience from projects like an Amazon Clone, an AI-powered educational platform from Innovo Hackathon, and an OpenAI chatbot, I love solving real-world problems through technology. Beyond coding, I’m a state-level softball player and a dedicated learner, always eager to innovate and grow.</p>
+                <p class="mt-20">Hi, I'm Anshuman Agrawal, a passionate Information Technology student pursuing my BE at Shri Sant Gajanan Maharaj College of Engineering, Shegaon. I'm enthusiastic about exploring the world of AI/ML, web development, and software engineering. With hands-on experience from projects like an Amazon Clone, an AI-powered educational platform from Innovo Hackathon, and an OpenAI chatbot, I love solving real-world problems through technology. Beyond coding, I'm a state-level softball player and a dedicated learner, always eager to innovate and grow.</p>
             </div>
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Personal Info</h3>
@@ -119,11 +132,12 @@
 <section class="section" id="resume">
     <div class="container">
         <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
-        <div class="text-center mb-4">
+        <!-- MODIFICATION 1B: Original download button location (removed as it was relocated) -->
+        <!-- <div class="text-center mb-4">
             <a href="assets/docs/Anshuman_Agrawal_Resume.pdf" download class="btn btn-danger btn-lg">
               <i class="ti-download mr-2"></i>Download Resume
             </a>
-        </div>
+        </div> -->
         <div class="row">
             <div class="col-md-6 col-lg-4">
                 <div class="card">
@@ -239,8 +253,18 @@
 <section class="section bg-custom-gray" id="portfolio">
     <div class="container">
         <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+        
+        <!-- MODIFICATION 2B: Enhanced Fablab visibility with prominent button -->
+        <div class="text-center mb-4">
+            <a href="#" data-filter=".new" class="btn btn-danger btn-lg active">
+                FABLAB PROJECTS
+            </a>
+        </div>
+        <!-- End of Fablab Enhancement -->
+        
         <div class="portfolio">
-            <div class="filters">
+            <!-- MODIFICATION 2C: Original Fablab filter modified to be more subtle (kept for filter functionality) -->
+            <div class="filters" style="display: none;">
                 <a href="#" data-filter=".new" class="active">
                     Fablab
                 </a>
